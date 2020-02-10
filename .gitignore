@@ -1,5 +1,5 @@
 .idea/
-.idea/*
+.idea/*.xml
 .git/
 .idea/mattecms.local.iml
 .idea/modules.xml
