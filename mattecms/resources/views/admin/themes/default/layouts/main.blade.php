@@ -27,9 +27,17 @@
             </ul>
         </div>
     </header>
-    <main class="page-content fade-in-up">
-        @yield('content')
-    </main>
+    <div class="layout-outer container-flud">
+        <div class="row">
+            <div class="leftbar-outer col-2">
+                LEFTBAR
+            </div>
+            <div class="col-8 fade-in-up">
+                <main>@yield('content')</main>
+            </div>
+            <div class="col-2">RIGHTBAR</div>
+        </div>
+    </div>
     <!-- Bottom Assets -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="{{ URL::asset('js/jquery.cookie.js') }}"></script>

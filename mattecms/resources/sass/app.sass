@@ -1,13 +1,21 @@
 @import "ui/bootstrap/bootstrap.scss"
+@import "css/bootstrap-largegrid.min"
 @import "ui/components/components.scss"
 @import "ui/layouts/admin_1/layout.scss"
 @import "ui/vendors/vendors.scss"
 @import "ui/line-awesome/scss/line-awesome.scss"
 
-/* My styles */
+/* Vars */
 
-main
+$layout: layout
+$leftbar: leftbar
+
+/* Styles */
+
+.#{$layout}-outer
   margin:
-    top: 66px !important
-  padding:
-    top: 0px !important
+    top: 66px
+
+.#{$leftbar}-outer
+  border:
+    right: 2px solid #ccc
