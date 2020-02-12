@@ -25423,13 +25423,6 @@ table > tbody > tr > td > span.footable-toggle {
 .ibox-head {
   justify-content: flex-start !important;
   border-top: 1px solid #eee;
-}
-
-.ibox-head:first-child {
-  border-bottom: 0px solid #fff !important;
-}
-
-.collapsed {
   border-bottom: 1px solid #fff !important;
 }
 
