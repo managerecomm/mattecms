@@ -8,14 +8,29 @@
 /* Vars */
 
 $layout: layout
-$leftbar: leftbar
+$leftblock: leftblock
 
 /* Styles */
+
+.storke
+  border: 1px solid #ff0000
+
+.height-wrapper
+  height: 1500px !important
 
 .#{$layout}-outer
   margin:
     top: 66px
 
-.#{$leftbar}-outer
-  border:
-    right: 2px solid #ccc
+.#{$leftblock}-outer
+  width: 230px
+  height: 100vh
+
+.ui-resizable-handle
+  background: #ececec
+  width: 7px !important
+  transition: background 0.3s ease
+  &:hover
+    background: #ccc
+  &:active
+    background: #b3d7ff

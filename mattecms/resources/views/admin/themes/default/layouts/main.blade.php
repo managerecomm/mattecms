@@ -27,19 +27,20 @@
             </ul>
         </div>
     </header>
-    <div class="layout-outer container-flud">
-        <div class="row">
-            <div class="leftbar-outer col-2">
-                LEFTBAR
+    <div class="layout-outer d-flex">
+
+            <div class="leftblock-outer" id="leftblock">
+                LEFT BLOCK
             </div>
-            <div class="col-8 fade-in-up">
+            <div class="midblock-outer flex-grow-1 fade-in-up" id="midblock">
                 <main>@yield('content')</main>
             </div>
-            <div class="col-2">RIGHTBAR</div>
-        </div>
+
     </div>
     <!-- Bottom Assets -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <script src="{{ URL::asset('js/jquery.cookie.js') }}"></script>
     <script src="{{ URL::asset('js/app.js') }}"></script>
 </body>
