@@ -12,6 +12,8 @@ $leftblock: leftblock
 
 /* Styles */
 
+/* Admin */
+
 .storke
   border: 1px solid #ff0000
 
@@ -23,7 +25,7 @@ $leftblock: leftblock
     top: 66px
 
 .#{$leftblock}-outer
-  width: 230px
+  width: 280px
   height: 100vh
 
 .ui-resizable-handle
@@ -33,4 +35,17 @@ $leftblock: leftblock
   &:hover
     background: #ccc
   &:active
-    background: #b3d7ff
+    background: #5C6BC0
+
+.ibox-head
+  justify-content: flex-start !important
+  border:
+    top: 1px solid #eee
+
+.ibox-head:first-child
+  border:
+    bottom: 0px solid #fff !important
+
+.collapsed
+  border:
+    bottom: 1px solid #fff !important

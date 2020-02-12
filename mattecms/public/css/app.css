@@ -25387,6 +25387,8 @@ table > tbody > tr > td > span.footable-toggle {
 
 /* Styles */
 
+/* Admin */
+
 .storke {
   border: 1px solid #ff0000;
 }
@@ -25400,7 +25402,7 @@ table > tbody > tr > td > span.footable-toggle {
 }
 
 .leftblock-outer {
-  width: 230px;
+  width: 280px;
   height: 100vh;
 }
 
@@ -25415,6 +25417,19 @@ table > tbody > tr > td > span.footable-toggle {
 }
 
 .ui-resizable-handle:active {
-  background: #b3d7ff;
+  background: #5C6BC0;
+}
+
+.ibox-head {
+  justify-content: flex-start !important;
+  border-top: 1px solid #eee;
+}
+
+.ibox-head:first-child {
+  border-bottom: 0px solid #fff !important;
+}
+
+.collapsed {
+  border-bottom: 1px solid #fff !important;
 }
 

@@ -1,4 +1,3 @@
-require('./ui/bootstrap');
 require('./ui/main');
 
 /* LeftBar */
@@ -11,7 +10,7 @@ $(document).ready(function() {
     $(leftblock).resizable({
         handles: 'e',
         maxWidth: 600,
-        minWidth: 230,
+        minWidth: 280,
         resize: function(event, ui){
             var currentWidth = ui.size.width;
             var padding = 12;
