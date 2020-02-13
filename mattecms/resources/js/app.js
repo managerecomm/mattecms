@@ -10,7 +10,7 @@ $(document).ready(function() {
     $(leftblock).resizable({
         handles: 'e',
         maxWidth: 600,
-        minWidth: 280,
+        minWidth: 300,
         resize: function(event, ui){
             var currentWidth = ui.size.width;
             var padding = 12;
@@ -27,5 +27,26 @@ $(document).ready(function() {
 
     $('#leftblock').width($.cookie('lbw'));
     $('#midblock').width($.cookie('mbw'));
+
+    $('#leftblock').on('resize', function () {
+        if ($('#leftblock').width() < 400){
+            $('.leftmenu-info').hide();
+        } else {
+            $('.leftmenu-info').show();
+        }
+    })
+
+    $(window).on('load', function () {
+        if ($('#leftblock').width() < 400){
+            $('.leftmenu-info').hide();
+        } else {
+            $('.leftmenu-info').show();
+        }
+
+
+        $('#'+$.cookie('sbmenu')).addClass('show');
+        alert($.cookie('sbmenu'));
+
+    })
 
 });

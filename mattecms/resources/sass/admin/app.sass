@@ -1,0 +1,108 @@
+@import "../ui/bootstrap/bootstrap"
+@import "../css/bootstrap-largegrid.min.css"
+@import "../ui/components/components"
+@import "../ui/layouts/admin_1/layout"
+@import "../ui/vendors/vendors"
+@import "../ui/line-awesome/scss/line-awesome"
+
+/* Vars */
+
+$layout: layout
+$leftblock: leftblock
+
+/* Styles */
+
+a:hover
+  color: $text-purple
+
+a:active
+  color: $text-purple
+
+a:focus
+  color: $text-purple
+
+/* Admin */
+
+.storke
+  border: 1px solid #ff0000
+
+.height-wrapper
+  height: 1500px !important
+
+.#{$layout}-outer
+  margin:
+    top: 66px
+
+.#{$leftblock}-outer
+  min-width: 300px
+  width: 300px
+  height: 100vh
+
+.ui-resizable-handle
+  background: #dcdcdc
+  width: 7px !important
+  transition: background 0.3s ease
+  &:hover
+    background: #ccc
+  &:active
+    background: #5C6BC0
+
+.admin-search-block
+  border-bottom: 1px solid #ececec
+
+#leftmenu div .ibox-head
+  justify-content: flex-start !important
+  cursor: pointer
+
+.leftmenu-root
+  background: $purple
+  color: #fff
+  transition: background-color 0.3s ease, color 0.3s ease
+
+.leftmenu-root.collapsed
+  background: #fff !important
+  color: $ebony !important
+  transition: background-color 0.3s ease, color 0.3s ease
+
+
+.leftmenu-body
+  padding: 0 !important
+
+.leftsubmenu
+  list-style: none
+  margin: 0
+  padding: 0
+  background: #fafafa
+  li
+    border:
+      bottom: 1px solid #ececec
+    &:first-child
+        border:
+          top: 1px solid #ececec
+    a
+      display: flex !important
+      align-items: center !important
+      justify-content: flex-start
+      padding:
+        top: 10px
+        right: 20px
+        bottom: 10px
+        left: 30px
+      &:hover
+        color: $purple
+      &.active
+        background: #ececec
+        color: $purple
+    &>ul
+      list-style: none
+      padding: 0
+      margin: 0
+      background: #fff
+      &>li
+          padding:
+            left: 10px !important
+          &>a
+            display: flex !important
+            align-items: center !important
+
+  

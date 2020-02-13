@@ -103,7 +103,7 @@ $(document).ready(function () {
   $(leftblock).resizable({
     handles: 'e',
     maxWidth: 600,
-    minWidth: 280,
+    minWidth: 300,
     resize: function resize(event, ui) {
       var currentWidth = ui.size.width;
       var padding = 12;
@@ -119,6 +119,23 @@ $(document).ready(function () {
   });
   $('#leftblock').width($.cookie('lbw'));
   $('#midblock').width($.cookie('mbw'));
+  $('#leftblock').on('resize', function () {
+    if ($('#leftblock').width() < 400) {
+      $('.leftmenu-info').hide();
+    } else {
+      $('.leftmenu-info').show();
+    }
+  });
+  $(window).on('load', function () {
+    if ($('#leftblock').width() < 400) {
+      $('.leftmenu-info').hide();
+    } else {
+      $('.leftmenu-info').show();
+    }
+
+    $('#' + $.cookie('sbmenu')).addClass('show');
+    alert($.cookie('sbmenu'));
+  });
 });
 
 /***/ }),
@@ -346,10 +363,10 @@ $(function () {
 
 /***/ }),
 
-/***/ "./resources/sass/app.sass":
-/*!*********************************!*\
-  !*** ./resources/sass/app.sass ***!
-  \*********************************/
+/***/ "./resources/sass/admin/app.sass":
+/*!***************************************!*\
+  !*** ./resources/sass/admin/app.sass ***!
+  \***************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -358,14 +375,14 @@ $(function () {
 /***/ }),
 
 /***/ 0:
-/*!*************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.sass ***!
-  \*************************************************************/
+/*!*******************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/admin/app.sass ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\OS_535\OSPanel\domains\mattecms.local\mattecms\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\OS_535\OSPanel\domains\mattecms.local\mattecms\resources\sass\app.sass */"./resources/sass/app.sass");
+__webpack_require__(/*! D:\Soft\Development\OSPanel\domains\mattecms.local\mattecms\mattecms\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\Soft\Development\OSPanel\domains\mattecms.local\mattecms\mattecms\resources\sass\admin\app.sass */"./resources/sass/admin/app.sass");
 
 
 /***/ })
