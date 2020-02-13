@@ -29,7 +29,7 @@ $(document).ready(function() {
     $('#midblock').width($.cookie('mbw'));
 
     $('#leftblock').on('resize', function () {
-        if ($('#leftblock').width() < 400){
+        if ($('#leftblock').width() < 475){
             $('.leftmenu-info').hide();
         } else {
             $('.leftmenu-info').show();
@@ -37,16 +37,11 @@ $(document).ready(function() {
     })
 
     $(window).on('load', function () {
-        if ($('#leftblock').width() < 400){
+        if ($('#leftblock').width() < 475){
             $('.leftmenu-info').hide();
         } else {
             $('.leftmenu-info').show();
         }
-
-
-        $('#'+$.cookie('sbmenu')).addClass('show');
-        alert($.cookie('sbmenu'));
-
     })
 
 });

@@ -53,20 +53,26 @@ a:focus
 #leftmenu div .ibox-head
   justify-content: flex-start !important
   cursor: pointer
+  border:
+    bottom: 1px solid #5c6bc0
 
 .leftmenu-root
   background: $purple
   color: #fff
-  transition: background-color 0.3s ease, color 0.3s ease
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease
 
 .leftmenu-root.collapsed
   background: #fff !important
   color: $ebony !important
-  transition: background-color 0.3s ease, color 0.3s ease
-
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease
+  border:
+    bottom: 1px solid #eee !important
 
 .leftmenu-body
   padding: 0 !important
+
+.leftmenu-info
+  white-space: nowrap
 
 .leftsubmenu
   list-style: none
@@ -105,4 +111,13 @@ a:focus
             display: flex !important
             align-items: center !important
 
-  
+.category > .flex-grow-1
+  min-width: 165px
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+
+.category > .badge
+  min-width: 40px !important
+  width: 40px !important
+  text-align: center

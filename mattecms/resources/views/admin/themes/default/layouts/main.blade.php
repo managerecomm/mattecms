@@ -31,9 +31,9 @@
         <div class="leftblock-outer" id="leftblock">
             <!-- Search Block -->
             <div class="admin-search-block p-4">
-                <div class="input-group-icon input-group-icon-left">
-                    <span class="input-icon input-icon-left"><i class="las la-search"></i></span>
-                    <input class="form-control form-control-lg form-control-solid" type="text" placeholder="Поиск">
+                <div class="input-group-icon input-group-icon-left flexbox-b">
+                    <span class="input-icon input-icon-left"><i class="las la-search font-20"></i></span>
+                    <input class="form-control form-control-lg form-control-solid font-20" type="text" placeholder="Поиск">
                 </div>
             </div>
             <!-- Menu -->
@@ -50,15 +50,21 @@
                                 <a href="">
                                     <i class="las la-file-code mr-2 font-30"></i>
                                     <span class=" flex-grow-1">Главная</span>
-                                    <span class="leftmenu-info text-muted text-right"><b>id:</b> 0; <b>uri:</b> /</span>
+                                    <span class="leftmenu-info">
+                                        <span class="badge badge-default font-14">ID: 0</span>
+                                        <span class="badge badge-default font-14">URI: /</span>
+                                    </span>
                                 </a>
                             </li>
                             <li>
                                 <a class="category" href="#" onclick="return false;"  data-toggle="collapse" data-target="#collapse5" aria-expanded="true" data-body="collapse5">
                                     <i class="lar la-folder-open mr-2 font-30"></i>
                                     <span class="flex-grow-1">Category 1</span>
-                                    <span class="leftmenu-info text-muted text-right"><b>id:</b> 2; <b>uri:</b> /category-1</span>
-                                    <span class="badge badge-primary badge-circle ml-4">4</span>
+                                    <span class="leftmenu-info">
+                                        <span class="badge badge-default font-14">ID: 1</span>
+                                        <span class="badge badge-default font-14">URI: /category-1</span>
+                                    </span>
+                                    <span class="badge badge-primary font-14 px-2 ml-1">154</span>
                                 </a>
                                 <ul id="collapse5" class="collapse">
                                     <li><a href=""><i class="las la-file-code mr-2 font-30"></i>Resource 1</a></li>
@@ -67,7 +73,17 @@
                                     <li><a href=""><i class="las la-file-code mr-2 font-30"></i>Resource 4</a></li>
                                 </ul>
                             </li>
-                            <li><a href=""><i class="las la-folder mr-2 font-30"></i>Category 2</a></li>
+                            <li>
+                                <a class="category" href="#" onclick="return false;"  data-toggle="collapse" data-target="#collapse5" aria-expanded="true" data-body="collapse5">
+                                    <i class="lar la-folder-open mr-2 font-30"></i>
+                                    <span class="flex-grow-1">Category 2 Long text for Category</span>
+                                    <span class="leftmenu-info">
+                                        <span class="badge badge-default font-14">ID: 2</span>
+                                        <span class="badge badge-default font-14">URI: /category-2</span>
+                                    </span>
+                                    <span class="badge badge-primary font-14 px-2 ml-1">14</span>
+                                </a>
+                            </li>
                             <li><a href=""><i class="las la-folder mr-2 font-30"></i>Category 3</a></li>
                             <li><a href=""><i class="las la-folder mr-2 font-30"></i>Category 4</a></li>
                             <li><a href=""><i class="las la-folder mr-2 font-30"></i>Category 5</a></li>

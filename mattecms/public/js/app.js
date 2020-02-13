@@ -120,21 +120,18 @@ $(document).ready(function () {
   $('#leftblock').width($.cookie('lbw'));
   $('#midblock').width($.cookie('mbw'));
   $('#leftblock').on('resize', function () {
-    if ($('#leftblock').width() < 400) {
+    if ($('#leftblock').width() < 475) {
       $('.leftmenu-info').hide();
     } else {
       $('.leftmenu-info').show();
     }
   });
   $(window).on('load', function () {
-    if ($('#leftblock').width() < 400) {
+    if ($('#leftblock').width() < 475) {
       $('.leftmenu-info').hide();
     } else {
       $('.leftmenu-info').show();
     }
-
-    $('#' + $.cookie('sbmenu')).addClass('show');
-    alert($.cookie('sbmenu'));
   });
 });
 
@@ -381,8 +378,8 @@ $(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\Soft\Development\OSPanel\domains\mattecms.local\mattecms\mattecms\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\Soft\Development\OSPanel\domains\mattecms.local\mattecms\mattecms\resources\sass\admin\app.sass */"./resources/sass/admin/app.sass");
+__webpack_require__(/*! D:\OS_535\OSPanel\domains\mattecms.local\mattecms\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\OS_535\OSPanel\domains\mattecms.local\mattecms\resources\sass\admin\app.sass */"./resources/sass/admin/app.sass");
 
 
 /***/ })
