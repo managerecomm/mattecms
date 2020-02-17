@@ -378,8 +378,8 @@ $(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\OS_535\OSPanel\domains\mattecms.local\mattecms\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\OS_535\OSPanel\domains\mattecms.local\mattecms\resources\sass\admin\app.sass */"./resources/sass/admin/app.sass");
+__webpack_require__(/*! D:\Soft\Development\OSPanel\domains\mattecms.local\mattecms\mattecms\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\Soft\Development\OSPanel\domains\mattecms.local\mattecms\mattecms\resources\sass\admin\app.sass */"./resources/sass/admin/app.sass");
 
 
 /***/ })

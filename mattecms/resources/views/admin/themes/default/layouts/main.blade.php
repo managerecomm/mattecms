@@ -50,21 +50,12 @@
                                 <a href="">
                                     <i class="las la-file-code mr-2 font-30"></i>
                                     <span class=" flex-grow-1">Главная</span>
-                                    <span class="leftmenu-info">
-                                        <span class="badge badge-default font-14">ID: 0</span>
-                                        <span class="badge badge-default font-14">URI: /</span>
-                                    </span>
                                 </a>
                             </li>
                             <li>
                                 <a class="category" href="#" onclick="return false;"  data-toggle="collapse" data-target="#collapse5" aria-expanded="true" data-body="collapse5">
                                     <i class="lar la-folder-open mr-2 font-30"></i>
                                     <span class="flex-grow-1">Category 1</span>
-                                    <span class="leftmenu-info">
-                                        <span class="badge badge-default font-14">ID: 1</span>
-                                        <span class="badge badge-default font-14">URI: /category-1</span>
-                                    </span>
-                                    <span class="badge badge-primary font-14 px-2 ml-1">154</span>
                                 </a>
                                 <ul id="collapse5" class="collapse">
                                     <li><a href=""><i class="las la-file-code mr-2 font-30"></i>Resource 1</a></li>
@@ -78,10 +69,7 @@
                                     <i class="lar la-folder-open mr-2 font-30"></i>
                                     <span class="flex-grow-1">Category 2 Long text for Category</span>
                                     <span class="leftmenu-info">
-                                        <span class="badge badge-default font-14">ID: 2</span>
-                                        <span class="badge badge-default font-14">URI: /category-2</span>
                                     </span>
-                                    <span class="badge badge-primary font-14 px-2 ml-1">14</span>
                                 </a>
                             </li>
                             <li><a href=""><i class="las la-folder mr-2 font-30"></i>Category 3</a></li>
@@ -102,8 +90,30 @@
                 </div>
             </div>
         </div>
-        <div class="midblock-outer flex-grow-1 fade-in-up p-3" id="midblock">
-            <main>@yield('content')</main>
+        <div class="midblock-outer flex-grow-1 p-3" id="midblock">
+            <div class="category-controls btn-group-sm">
+                <button class="btn btn-success font-13 mr-1">
+                    <span class="btn-icon"><i class="lar la-save"></i> Сохранить</span>
+                </button>
+                <button class="btn btn-warning font-13 mr-1">
+                    <span class="btn-icon"><i class="lar la-copy"></i> Копировать</span>
+                </button>
+                <button class="btn btn-danger font-13 mr-1">
+                    <span class="btn-icon"><i class="las la-trash-alt"></i> Удалить</span>
+                </button>
+                <button class="btn btn-secondary font-13 btn-fix">
+                    <span class="btn-icon"><i class="las la-times"></i> Отмена</span>
+                </button>
+            </div>
+            <div class="h4 mt-2 mb-4">Категория 1</div>
+            <ol class="breadcrumb small">
+                <li class="breadcrumb-item">
+                    <a href="index.html"><i class="las la-home font-16"></i></a>
+                </li>
+                <li class="breadcrumb-item">Basic UI</li>
+                <li class="breadcrumb-item">Typography</li>
+            </ol>
+            <main class="fade-in-up">@yield('content')</main>
         </div>
         </div>
     </div>

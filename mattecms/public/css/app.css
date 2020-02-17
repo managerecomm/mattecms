@@ -17019,7 +17019,7 @@ table > tbody > tr > td > span.footable-toggle {
   font-weight: normal;
   font-display: auto;
   src: url(/fonts/la-brands-400.eot?a38ca9f0501109549cb659c1fe9ade65);
-  src: url(/fonts/la-brands-400.eot?a38ca9f0501109549cb659c1fe9ade65) format("embedded-opentype"), url(/fonts/la-brands-400.woff2?54b0b4e7de85711c3796882b2b19eb00) format("woff2"), url(/fonts/la-brands-400.woff?fb598c9ccecd5fa1c6c769d0be60973b) format("woff"), url(/fonts/la-brands-400.ttf?bbf83f8bb1039cd860051299d64ebcfd) format("truetype"), url(/fonts/la-brands-400.svg?9769d0a6a42cf73df12bc63a7a994131) format("svg");
+  src: url(/fonts/la-brands-400.eot?a38ca9f0501109549cb659c1fe9ade65) format("embedded-opentype"), url(/fonts/la-brands-400.woff2?54b0b4e7de85711c3796882b2b19eb00) format("woff2"), url(/fonts/la-brands-400.woff?fb598c9ccecd5fa1c6c769d0be60973b) format("woff"), url(/fonts/la-brands-400.ttf?bbf83f8bb1039cd860051299d64ebcfd) format("truetype"), url(/fonts/la-brands-400.svg?6bc391600900f925d0dc04780ce7e360) format("svg");
 }
 
 .lab {
@@ -17033,7 +17033,7 @@ table > tbody > tr > td > span.footable-toggle {
   font-weight: 400;
   font-display: auto;
   src: url(/fonts/la-regular-400.eot?2746742c09b070f74bd7d555e6b959fa);
-  src: url(/fonts/la-regular-400.eot?2746742c09b070f74bd7d555e6b959fa) format("embedded-opentype"), url(/fonts/la-regular-400.woff2?88d9d9416c58bde56378dc4439e3a144) format("woff2"), url(/fonts/la-regular-400.woff?338f6f873b90c8045204f8ac52408166) format("woff"), url(/fonts/la-regular-400.ttf?87dab6ff12ea107dafe1d52ec19c2ed8) format("truetype"), url(/fonts/la-regular-400.svg?55c57a74937e6de260b67c62522f7ea1) format("svg");
+  src: url(/fonts/la-regular-400.eot?2746742c09b070f74bd7d555e6b959fa) format("embedded-opentype"), url(/fonts/la-regular-400.woff2?88d9d9416c58bde56378dc4439e3a144) format("woff2"), url(/fonts/la-regular-400.woff?338f6f873b90c8045204f8ac52408166) format("woff"), url(/fonts/la-regular-400.ttf?87dab6ff12ea107dafe1d52ec19c2ed8) format("truetype"), url(/fonts/la-regular-400.svg?32e969c394a0f84aea1e058edb2138eb) format("svg");
 }
 
 .lar {
@@ -17047,7 +17047,7 @@ table > tbody > tr > td > span.footable-toggle {
   font-weight: 900;
   font-display: auto;
   src: url(/fonts/la-solid-900.eot?8c65fd3e9b53a609735fd6335fd05841);
-  src: url(/fonts/la-solid-900.eot?8c65fd3e9b53a609735fd6335fd05841) format("embedded-opentype"), url(/fonts/la-solid-900.woff2?36fc297902c9a2e857858baa6ac25f2c) format("woff2"), url(/fonts/la-solid-900.woff?87292218024ee1cab93406e228a0b7dd) format("woff"), url(/fonts/la-solid-900.ttf?bb49393b04bbf312a6cd055a051121d3) format("truetype"), url(/fonts/la-solid-900.svg?79be4e9fcffc796ec3b2cb9a1f46d39e) format("svg");
+  src: url(/fonts/la-solid-900.eot?8c65fd3e9b53a609735fd6335fd05841) format("embedded-opentype"), url(/fonts/la-solid-900.woff2?36fc297902c9a2e857858baa6ac25f2c) format("woff2"), url(/fonts/la-solid-900.woff?87292218024ee1cab93406e228a0b7dd) format("woff"), url(/fonts/la-solid-900.ttf?bb49393b04bbf312a6cd055a051121d3) format("truetype"), url(/fonts/la-solid-900.svg?cac7939081c036bb82cd104acdb27efa) format("svg");
 }
 
 .las {
@@ -23026,5 +23026,20 @@ a:focus {
   min-width: 40px !important;
   width: 40px !important;
   text-align: center;
+}
+
+.category-controls {
+  display: inline-block;
+  position: fixed;
+  right: 0px;
+  top: 66px;
+  padding-top: 15px;
+  padding-bottom: 14px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 8px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 4px;
+  z-index: 999;
 }
 
